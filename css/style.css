@@ -1,0 +1,524 @@
+/*!
+ * Start Bootstrap - Agency Bootstrap Theme (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+
+/* 
+ STYLES
+
+COLOR 
+light green: #B3B053;
+dark green: #295E52;
+dark pink: #762346;
+light gray: #ACADBF;
+dark blue: #19203D;
+
+FONTS
+
+ */
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    overflow-x: hidden;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 200;
+}
+
+p {
+    font-size: 14px;
+    line-height: 1.5;
+    letter-spacing: 1.3px;
+}
+
+* {
+    outline: none;
+}
+
+a {
+    font-size: inherit;
+    color: #fff;
+    -webkit-transition: all .35s;
+    -moz-transition: all .35s;
+    transition: all .35s;
+}
+
+a,
+a:hover,
+a:focus,
+a:active,
+a.active {
+    outline: 0;
+}
+
+a:hover,
+a:focus,
+a:active,
+a.active {
+    color: rgba(255,255,255,.5);
+    text-decoration: none;
+}
+
+.navlogo {
+    float: left;
+    margin-top: 5px;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+      font-family: "neuzeit-grotesk",sans-serif;
+}
+
+.img-centered {
+    margin: 0 auto;
+}
+
+#portfolio {
+    padding-top: 120px;
+}
+
+/*#about {
+    padding-top: 60px;
+}*/
+
+footer {
+    padding: 100px 0;
+    background-color: #762346;
+}
+
+
+/*FONTS*/
+
+
+
+
+/*HEADING STYLES*/
+
+h2.section-heading {
+    color: #fff;
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 30px;
+  font-family: "neuzeit-grotesk",sans-serif;
+      font-weight: 400;
+    line-height: 1.1;
+}
+
+
+/*BUTTON STYLES*/
+
+button {
+    background: #B3B053;
+    padding: 10px 16px;
+    width: auto;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 14px;
+    color: #fff;
+    line-height: 16px;
+    letter-spacing: 0.5px;
+    border-radius: 2px;
+    -webkit-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.1);
+    border: 0;
+    outline: 0;
+    margin: 5px;
+    -webkit-transition: all 0.25s;
+    transition: all 0.25s;
+}
+
+button > a {
+    font-weight: 400;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 14px;
+    color: #fff;
+    line-height: 16px;
+}
+
+button:hover {
+    background: #295E52;
+        cursor: pointer;
+    -webkit-box-shadow: 0 4px 7px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 7px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Underline Reveal */
+
+.hvr-underline-reveal {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    position: relative;
+    overflow: hidden;
+}
+
+.hvr-underline-reveal:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #235059;
+    height: 3px;
+    -webkit-transform: translateY(3px);
+    transform: translateY(3px);
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+
+.hvr-underline-reveal:hover:before,
+.hvr-underline-reveal:focus:before,
+.hvr-underline-reveal:active:before {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+}
+
+
+/*NAV STYLES*/
+
+.navbar-default {
+  font-family: "neuzeit-grotesk",sans-serif;
+      font-weight: 500;
+    background-color: #fff;
+    -webkit-transition: all .35s;
+    -moz-transition: all .35s;
+    transition: all .35s;
+}
+
+.navbar-default .navbar-header .navbar-brand {
+    text-transform: uppercase;
+  font-family: "neuzeit-grotesk",sans-serif;
+      font-weight: 500;
+    color: #000;
+}
+
+.navbar-default .navbar-header .navbar-brand:hover,
+.navbar-default .navbar-header .navbar-brand:focus {
+    color: #000;
+    font-weight: 500;
+}
+
+.navbar-default .nav > li>a,
+.navbar-default .nav>li>a:focus {
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: .5px;
+    font-weight: 500;
+    color: #B3B053;
+}
+
+.navbar-default .nav > li>a:hover,
+.navbar-default .nav>li>a:focus:hover {
+    color: #295E52;
+    font-weight: 500;
+}
+
+.navbar-default .nav > li.active>a,
+.navbar-default .nav>li.active>a:focus {
+    color: #000!important;
+    background-color: transparent;
+    font-weight: 500;
+}
+
+.navbar-default .nav > li.active>a:hover,
+.navbar-default .nav>li.active>a:focus:hover {
+    background-color: transparent;
+}
+
+@media(min-width:768px) {
+    .navbar-default {
+        /*border-color: rgba(255,255,255,.3);*/
+        background-color: #fff;
+    }
+    .navbar-default .navbar-header .navbar-brand {
+        color: rgba(0, 0, 0, .7);
+    }
+    .navbar-default .navbar-header .navbar-brand:hover,
+    .navbar-default .navbar-header .navbar-brand:focus {
+        color: #fff;
+    }
+    .navbar-default .nav > li>a,
+    .navbar-default .nav>li>a:focus {
+        /*color: rgba(255,255,255,.7);*/
+        color: #B3B053;
+    }
+    .navbar-default .nav > li>a:hover,
+    .navbar-default .nav>li>a:focus:hover {
+        color: #295E52;
+        font-weight: 500;
+    }
+    .navbar-default.affix {
+        border-color: rgba(34, 34, 34, .05);
+        background-color: #fff;
+    }
+    .navbar-default.affix .navbar-header .navbar-brand {
+        font-size: 14px;
+        color: #000;
+        font-weight: 500;
+    }
+    .navbar-default.affix .navbar-header .navbar-brand:hover,
+    .navbar-default.affix .navbar-header .navbar-brand:focus {
+        color: #000;
+        font-weight: 500;
+    }
+    .navbar-default.affix .nav > li>a,
+    .navbar-default.affix .nav>li>a:focus {
+        color: #222;
+    }
+    .navbar-default.affix .nav > li>a:hover,
+    .navbar-default.affix .nav>li>a:focus:hover {
+        color: #B3B053;
+        font-weight: 500;
+    }
+}
+
+
+/*NAV TOGGLE STYLES*/
+
+.navbar-default .navbar-toggle {
+    background-color: #fff;
+    border-color: #000;
+}
+
+.navbar-default .navbar-toggle:focus,
+.navbar-default .navbar-toggle:hover {
+    background-color: #fff;
+    border-color: #000;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #000;
+}
+
+.navbar-right {
+    background-color: #fff;
+}
+
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+    border-color: #fff;
+}
+
+
+/*PORTFOLIO STYLES*/
+
+#portfolio .portfolio-item {
+    right: 0;
+    margin: 0 0 15px;
+}
+
+#portfolio .portfolio-item .portfolio-link {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    max-width: 400px;
+}
+
+#portfolio .portfolio-item .portfolio-link .portfolio-hover {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    /*background: rgba(61, 138, 153, .9);*/
+    background: rgba(179,176,83, .9);
+    -webkit-transition: all ease .5s;
+    -moz-transition: all ease .5s;
+    transition: all ease .5s;
+}
+
+#portfolio .portfolio-item .portfolio-link .portfolio-hover:hover {
+    opacity: 1;
+}
+
+#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    height: 20px;
+    margin-top: -12px;
+    text-align: center;
+    font-size: 20px;
+    color: #fff;
+}
+
+#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content i {
+    margin-top: -12px;
+}
+
+#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h3,
+#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h4 {
+    margin: 0;
+}
+
+#portfolio .portfolio-item .portfolio-caption {
+    margin: 0 auto;
+    padding: 25px;
+    max-width: 400px;
+    text-align: center;
+    background-color: #fff;
+}
+
+#portfolio .portfolio-item .portfolio-caption h4 {
+    margin: 0;
+    text-transform: none;
+}
+
+#portfolio .portfolio-item .portfolio-caption p {
+    margin: 0;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+}
+
+#portfolio * {
+    z-index: 2;
+}
+
+@media(min-width:767px) {
+    #portfolio .portfolio-item {
+        margin-bottom: 70px;
+    }
+}
+
+
+/*MODAL STYLES*/
+
+.portfolio-modal .modal-content {
+    padding: 100px 0;
+    min-height: 100%;
+    border: 0;
+    border-radius: 0;
+    text-align: center;
+    background-clip: border-box;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.portfolio-modal .modal-content h2 {
+    margin-bottom: 0px;
+    font-size: 3em;
+}
+
+.portfolio-modal .modal-content p {
+    margin-bottom: 30px;
+}
+
+.portfolio-modal .modal-content p.item-intro {
+    margin-bottom: 20px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 20px;
+    color: #235059;
+}
+
+.portfolio-modal .modal-content ul.list-inline {
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+.portfolio-modal .modal-content img {
+    margin-bottom: 30px;
+}
+
+.portfolio-modal .close-modal {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    width: 75px;
+    height: 75px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.portfolio-modal .close-modal:hover {
+    opacity: .7;
+}
+
+.portfolio-modal .close-modal .lr {
+    z-index: 1051;
+    width: 1px;
+    height: 75px;
+    margin-left: 35px;
+    background-color: #295E52;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.portfolio-modal .close-modal .lr .rl {
+    z-index: 1052;
+    width: 1px;
+    height: 75px;
+    background-color: #295E52;
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+.portfolio-modal .modal-backdrop {
+    display: none;
+    opacity: 0;
+}
+
+::-moz-selection {
+    text-shadow: none;
+    background: #eee;
+}
+
+::selection {
+    text-shadow: none;
+    background: #eee;
+}
+
+img::selection {
+    background: 0 0;
+}
+
+img::-moz-selection {
+    background: 0 0;
+}
+
+body {
+    webkit-tap-highlight-color: #3d8a99;
+}
+
+
+/* NAV */
+
+@media screen and (min-width: 700px) {
+    .mobilenav {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 700px) {
+    .desktopnav {
+        display: none;
+    }
+
+}
+
+
